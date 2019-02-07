@@ -1,0 +1,19 @@
+.calc-btn {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+#calc-window {
+    width: 200px;
+}
+
+.calculator-movement {
+   text-align: center;
+   margin-left: 30%;
+}
+.window-box {
+    border: 2px solid black;
+    width: 200px;
+    height: 25px;
+}
