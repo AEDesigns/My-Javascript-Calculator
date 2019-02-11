@@ -1,7 +1,8 @@
 var a = [];
 var b = [];
 var c = [];
-var operator = []
+var operator = [];
+var input = [];
 
 function calculatorOperations(a, b, operator){
   if(typeof a !== 'number' || typeof b !== "number"){
@@ -19,6 +20,8 @@ function calculatorOperations(a, b, operator){
   }
 }
 
+
 document.addEventListener('click', function(e){
    a.push(parseInt(e.target.id));
+   var input = a.join('');
 })
