@@ -45,3 +45,11 @@ if (valueA === []){
     document.getElementById('calc-window').innerHTML = valueD.join(valueA + valueB)
 }) 
 };
+
+function clear(){
+        valueA.length = 0;
+        valueB.length = 0;
+        valueD.length = 0;
+        document.getElementById('calc-window').innerHTML = '';
+        console.log('button click')
+}
