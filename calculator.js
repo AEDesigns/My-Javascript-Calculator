@@ -20,8 +20,23 @@ function calculatorOperations(a, b, operator){
   }
 }
 
+let numField1 = document.getElementById('numField1');
+let numField2 = document.getElementById('numField2');
+let resultField = document.getElementById('resultField');
+let form = document.getElementById('xIsWhatPercentOfY');
 
-document.addEventListener('click', function(e){
-   a.push(parseInt(e.target.id));
-   var input = a.join('');
+form.addEventListener('submit', function(event){
+    if(!numField1.value || !numField2.value){
+        alert('Please Enter a Value');
+    } else {
+        var x = parseFloat(numField1.value);
+        var y = parseFloat(numField2.value);
+        var result = x / y;
+        var percent = result * 100;
+        resultField.innerText = "Answer: " + percent + "%";
+        event.preventDefault();
+    }
 })
+
+
+
