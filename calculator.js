@@ -44,14 +44,14 @@ var calcOperatorBtns = document.getElementsByClassName('calc-operator');
 var updateDisplayVal = function (onclick) {
     var btnText = onclick.target.innerHTML;
     if (displayVal === '0') {
-        displayVal = "";
+        displayVal = '';
         displayVal += btnText;
         displayvalElement.innerHTML = displayVal;
     }
 };
 
 for (let i = 0; i < calcNumbtns.length; i++) {
-    calcNumbtns[i].addEventListener('click' updateDisplayVal, false);
+    calcNumbtns[i].addEventListener('click', updateDisplayVal, false);
 }
 
 //for (let i = 0; i < calcOperatorBtns.length; i++) {
