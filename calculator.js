@@ -99,7 +99,7 @@ for (let i = 0; i < calcNumbtns.length; i++) {
 }
 
 for (let i = 0; i < calcOperatorBtns.length; i++) {
-  calcOperatorBtns[i],addEventListener('click', performOperation, false);  
+  calcOperatorBtns[i],addEventListener('click', performOperations, false);  
 }
 
 clrBtn.onclick = () => {
@@ -125,24 +125,3 @@ decimalBtn.onclick = () => {
     }
     displayvalElement.innerText = displayVal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
